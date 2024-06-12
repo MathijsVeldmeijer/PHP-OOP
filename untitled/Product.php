@@ -2,7 +2,7 @@
 
 class Product
 {
-    public $name;
+    public $name = "een bepaald spel";
 }
 
 
@@ -23,8 +23,21 @@ $game1->name = "Team Fortress 2";
 $game2 = new Product();
 $game2->name = "Rainbow Six Siege";
 
+$game3 = new Product();
+$game3->name = "pong";
+
+
+
+
+echo $game1->name. "<br>";
+echo $game2->name. "<br>";
+echo $game3->name. "<br>";
+
+
+$game1->name = "Team Fortress classic";
+echo $game1->name. "<br>";
 
 var_dump($game1);
 var_dump($game2);
 
-echo $game1->name;
+
